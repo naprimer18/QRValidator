@@ -3,32 +3,22 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ValidatorPoint from './validatorPoint'
 
-import { ValidatorProvider, ValidatorConsumer } from "./contextValidator"
+import { ValidatorProvider } from "./contextValidator"
 
 class ValidatorWrapper extends Component {
     constructor(props) {
         super(props);
-        this.returnErrorPoint = (newPointError) => {
-          if(newPointError === false ) {
-                this.setState({
-                    theme: "red",
-                })
-            } else { this.setState({
-              theme: "black",
-          })}
-        };
-
         this.state = {
-            theme: "black",
-            returnErrorPoint: this.returnErrorPoint,
+            dataError: this.props.errorStore
         };
     }
 
     render() {
-        console.log(this.props.errorStore);
         return (
             <ValidatorProvider  value={this.state}>
-                    <ValidatorPoint />
+                    <ValidatorPoint nameValidatePoint='name#1'/>
+                    <ValidatorPoint nameValidatePoint='name#2'/>
+                    <button>Submit</button>
             </ValidatorProvider>
         );
     }

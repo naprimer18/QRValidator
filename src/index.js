@@ -6,7 +6,7 @@ import { createStore } from 'redux'
 
 const initialState = [
     {
-        type:"Error",
+        type:"Nice",
         message:"bliaa",
         propertyName:"name#1"
     },

@@ -4,27 +4,24 @@ import { connect } from 'react-redux';
 import { ValidatorConsumer } from "./contextValidator"
 
 class ValidatorPoint extends Component {
-    validateForm = () => {
-        if(this.searchErrorInput.value == "") {
-            return false
-        }
-        return true
-    }
-
     render() {
-        console.log(ValidatorConsumer);
-
         return (
             <div>
                 <ValidatorConsumer >
-                    {({ returnErrorPoint,theme}) => (
+                    {({ dataError}) => (
                         <div >
-                            <input type="text"  ref={(input) => { this.searchErrorInput = input }} style={{borderColor: theme}} />
-                            <button onClick={() => {returnErrorPoint(this.validateForm())}}>
-                                submit
-                            </button>
-                        </div>
+                            {
+                                dataError.forEach((item) => {   // switch Case
+                                    if(item.propertyName === this.props.nameValidatePoint && item.type === "Nice" ) {
+                                        console.log("point #1 Nice")
+                                    }
+                                    if(item.propertyName === this.props.nameValidatePoint && item.type === "Warning" ) {
+                                        console.log("point #2 Warning")
+                                    }
+                                })
 
+                            }
+                        </div>
                     )}
                 </ValidatorConsumer>
             </div>
