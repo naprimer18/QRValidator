@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf199998-583a-4066-bd7b-53adbf5cc5f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/contextValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contextValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validatorWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validatorWrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validatorPoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validatorPoint.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/validatorWrapper.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -56,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/validatorPoint.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="312">
+              <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
               </folding>
@@ -162,12 +160,12 @@
       <updated>1557930842315</updated>
       <workItem from="1557930843469" duration="1910000" />
       <workItem from="1557932876094" duration="1869000" />
-      <workItem from="1557989649190" duration="3309000" />
+      <workItem from="1557989649190" duration="3530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7088000" />
+    <option name="totallyTimeSpent" value="7309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -245,10 +243,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validatorPoint.js">
+    <entry file="file://$PROJECT_DIR$/src/validatorWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="308">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#1#42#0" expanded="true" />
           </folding>
@@ -262,10 +260,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validatorWrapper.js">
+    <entry file="file://$PROJECT_DIR$/src/validatorPoint.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="312">
+          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
           <folding>
             <element signature="e#1#42#0" expanded="true" />
           </folding>

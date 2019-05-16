@@ -8,14 +8,15 @@ class ValidatorPoint extends Component {
         console.log(ValidatorConsumer);
         return (
             <div>
-                <form>
-                    <input type="text" name="name" />
-                </form>
                 <ValidatorConsumer >
                     {({ returnErrorPoint}) => (
-                        <button onClick={returnErrorPoint}>
-                            submit
-                        </button>
+                        <div>
+                            <input type="text" name="name" />
+                            <button onClick={returnErrorPoint}>
+                                submit
+                            </button>
+                        </div>
+
                     )}
                 </ValidatorConsumer>
             </div>
