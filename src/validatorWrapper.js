@@ -12,13 +12,12 @@ class ValidatorWrapper extends Component {
             dataError: this.props.errorStore
         };
     }
-
     render() {
         return (
             <ValidatorProvider  value={this.state}>
                     <ValidatorPoint nameValidatePoint='name#1'/>
                     <ValidatorPoint nameValidatePoint='name#2'/>
-                    <button>Submit</button>
+                    <button >Submit</button>
             </ValidatorProvider>
         );
     }

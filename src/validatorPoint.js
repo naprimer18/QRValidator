@@ -1,9 +1,7 @@
-
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { ValidatorConsumer } from "./contextValidator"
 
-class ValidatorPoint extends Component {
+export default class ValidatorPoint extends Component {
     render() {
         return (
             <div>
@@ -11,7 +9,7 @@ class ValidatorPoint extends Component {
                     {({ dataError}) => (
                         <div >
                             {
-                                dataError.forEach((item) => {   // switch Case
+                                dataError.forEach((item) => {
                                     if(item.propertyName === this.props.nameValidatePoint && item.type === "Nice" ) {
                                         console.log("point #1 Nice")
                                     }
@@ -19,7 +17,6 @@ class ValidatorPoint extends Component {
                                         console.log("point #2 Warning")
                                     }
                                 })
-
                             }
                         </div>
                     )}
@@ -28,10 +25,3 @@ class ValidatorPoint extends Component {
          );
     }
 }
-
-    export default connect(
-    state => ({
-        errorStore: state
-    }),
-    dispatch => ({})
-    )(ValidatorPoint);
