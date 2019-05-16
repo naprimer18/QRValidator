@@ -8,12 +8,18 @@ import { ValidatorProvider, ValidatorConsumer } from "./contextValidator"
 class ValidatorWrapper extends Component {
     constructor(props) {
         super(props);
-
         this.returnErrorPoint = (newPointError) => {
-           console.log(newPointError);
+          if(newPointError === false ) {
+                this.setState({
+                    theme: "red",
+                })
+            } else { this.setState({
+              theme: "black",
+          })}
         };
 
         this.state = {
+            theme: "black",
             returnErrorPoint: this.returnErrorPoint,
         };
     }

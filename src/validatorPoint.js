@@ -17,9 +17,9 @@ class ValidatorPoint extends Component {
         return (
             <div>
                 <ValidatorConsumer >
-                    {({ returnErrorPoint}) => (
-                        <div>
-                            <input type="text"  ref={(input) => { this.searchErrorInput = input }} />
+                    {({ returnErrorPoint,theme}) => (
+                        <div >
+                            <input type="text"  ref={(input) => { this.searchErrorInput = input }} style={{borderColor: theme}} />
                             <button onClick={() => {returnErrorPoint(this.validateForm())}}>
                                 submit
                             </button>
