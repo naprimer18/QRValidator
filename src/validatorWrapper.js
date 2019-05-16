@@ -9,8 +9,8 @@ class ValidatorWrapper extends Component {
     constructor(props) {
         super(props);
 
-        this.returnErrorPoint = () => {
-           console.log("error");
+        this.returnErrorPoint = (newPointError) => {
+           console.log(newPointError);
         };
 
         this.state = {
