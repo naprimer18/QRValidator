@@ -30,7 +30,11 @@ const store = createStore(errorReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && w
 
 ReactDOM.render(
     <Provider store={store}>
-        <ValidatorWrapper />
+        <ValidatorWrapper>
+            <div style={{'color': 'red'}}>
+                asdasdasdasdasdasd
+            </div>
+        </ValidatorWrapper>
     </Provider>,
     document.getElementById('root')
 );
