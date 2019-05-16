@@ -1,18 +1,28 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Form from './form'
+import ValidatorPoint from './validatorPoint'
 
 import { ValidatorProvider, ValidatorConsumer } from "./contextValidator"
 
 class ValidatorWrapper extends Component {
+    constructor(props) {
+        super(props);
+
+        this.returnErrorPoint = () => {
+           console.log("error");
+        };
+
+        this.state = {
+            returnErrorPoint: this.returnErrorPoint,
+        };
+    }
+
     render() {
         console.log(this.props.errorStore);
         return (
-            <ValidatorProvider value = {"hello"}>
-                <div >
-                    <Form />
-                </div>
+            <ValidatorProvider  value={this.state}>
+                    <ValidatorPoint />
             </ValidatorProvider>
         );
     }
