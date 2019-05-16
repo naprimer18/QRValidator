@@ -18,11 +18,17 @@ class ValidatorWrapper extends Component {
         };
     }
 
+    renderChildren = () => {
+      return this.props.children;
+    };
+
     render() {
         console.log(this.props.errorStore);
         return (
             <ValidatorProvider  value={this.state}>
-                    <ValidatorPoint />
+                    <ValidatorPoint >
+                        {this.renderChildren()}
+                    </ValidatorPoint>
             </ValidatorProvider>
         );
     }

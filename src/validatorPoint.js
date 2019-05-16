@@ -17,15 +17,12 @@ class ValidatorPoint extends Component {
         return (
             <div>
                 <ValidatorConsumer >
-                    {({ returnErrorPoint}) => (
-                        <div>
-                            <input type="text"  ref={(input) => { this.searchErrorInput = input }} />
-                            <button onClick={() => {returnErrorPoint(this.validateForm())}}>
-                                submit
-                            </button>
-                        </div>
-
-                    )}
+                    {
+                        ({ returnErrorPoint}) => {
+                            console.log('nice');
+                            return this.props.children;
+                        }
+                    }
                 </ValidatorConsumer>
             </div>
          );
