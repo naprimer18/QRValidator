@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { ValidatorConsumer } from "./contextValidator"
+import withData from './hoc-helpers';
 
-export default class ValidatorPoint extends Component {
+class ValidatorPoint extends Component {
+
     render() {
         return (
+<<<<<<< HEAD:validatorQRExtended/ClientApp/src/validatorPoint.js
             <div>
                 <ValidatorConsumer >
                     {({ dataError}) => (
@@ -24,7 +26,13 @@ export default class ValidatorPoint extends Component {
                         </div>
                     )}
                 </ValidatorConsumer>
+=======
+            <div onClick={ (e) => console.log(e.target)}>
+                {this.props.children}
+>>>>>>> d0cac28460d4b09d02f3b5d54f977ff4e357a9d2:src/validatorPoint.js
             </div>
          );
     }
 }
+
+export default withData(ValidatorPoint);
