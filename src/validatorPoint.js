@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import withData from './hoc-helpers';
 

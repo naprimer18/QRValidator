@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { ValidatorProvider } from "./contextValidator"
 
 class ValidatorWrapper extends Component {
-
     state = {
         dataError: this.props.errorStore
     };
